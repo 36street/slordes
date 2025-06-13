@@ -1,141 +1,92 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <title>Sosyal Medya Linkleri</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body, html {
-      height: 100%;
-      overflow: hidden;
-      font-family: Arial, sans-serif;
-      color: white;
-    }
-
-    .video-bg video {
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      z-index: -1;
-    }
-
-    .center-content {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-    }
-.profile-name {
-  margin-top: 10px;
-  font-size: 24px;
-  font-weight: bold;
-  color: white;
-  text-align: center;
-  user-select: none;
-}
-
-   .profile img {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  border: 3px solid white;
-  margin-bottom: 30px;
-}
-
-
-    .buttons {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-
-    .buttons a {
-      width: 100px;
-      height: 100px;
-      border-radius: 15px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: rgba(255, 255, 255, 0.15);
-      backdrop-filter: blur(5px);
-      color: white;
-      font-weight: bold;
-      text-decoration: none;
-      transition: 0.3s;
-      flex-direction: column;
-      border: 1px solid rgba(255, 255, 255, 0.2);
-    }
-
-    .buttons a img {
-      width: 35px;
-      height: 35px;
-      margin-bottom: 8px;
-    }
-
-    .buttons a:hover {
-      background-color: rgba(255, 255, 255, 0.3);
-    }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Video Arka Plan ve Profil</title>
+<style>
+  html, body {
+    margin: 0; padding: 0; height: 100%;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    background: black;
+    color: white;
+  }
+  video#bgVideo {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  .center {
+    position: fixed;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .profile img {
+    width: 160px; height: 160px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-bottom: 20px;
+  }
+  .profile-name {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  .buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+    height: 100px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-size: 18px;
+    user-select: none;
+    transition: filter 0.3s ease;
+  }
+  .buttons a:hover {
+    filter: brightness(80%);
+  }
+  .instagram { background: #E1306C; }
+  .discord { background: #5865F2; }
+  .youtube { background: #FF0000; }
+  .x { background: #1DA1F2; }
+  .tiktok { background: #010101; }
+</style>
 </head>
 <body>
 
-  <!-- Arka Plan Videosu -->
-  <div class="video-bg">
-    <video id="bgVideo" autoplay loop>
-      <source src="./(4K) Jon Snow (EDIT) _Bloody Marry_.mp4" type="video/mp4">
-      Tarayıcınız video etiketini desteklemiyor.
-    </video>
-  </div>
-<div class="profile">
-  <p class="profile-name">SLoRdEs</p>
-</div>
+  <video id="bgVideo" autoplay muted loop playsinline>
+    <source src="./(4K) Jon Snow (EDIT) _Bloody Marry_.mp4" type="video/mp4" />
+    Tarayıcınız video etiketini desteklemiyor.
+  </video>
 
-
-  <!-- Profil ve Butonlar -->
-  <div class="center-content">
+  <div class="center">
     <div class="profile">
-      <img src="./1021381995_175_0_856_681_1920x0_80_0_0_e8c4cfec2e76626b81275a654f195ea6.jpg" alt="Profil Fotoğrafı">
+   <source src=/1021381995_175_0_856_681_1920x0_80_0_0_e8c4cfec2e76626b81275a654f195ea6.jpg/alt="Profil Fotoğrafı" />
+      <div class="profile-name">SLoRdEs</div>
     </div>
+
     <div class="buttons">
-      <a href="https://instagram.com/abidin_.466" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
-        Instagram
-      </a>
-      <a href="https://discord.gg/HaSH7sCG" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968756.png" alt="Discord">
-        Discord
-      </a>
-      <a href="https://www.youtube.com/@slordes" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube">
-        YouTube
-      </a>
-      <a href="https://x.com/kullaniciadi" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="X">
-        X
-      </a>
-      <a href="https://www.tiktok.com/@slordesboy" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/3046/3046120.png" alt="TikTok">
-        TikTok
-      </a>
+      <a href="https://instagram.com/abidin_.466" target="_blank" class="instagram" rel="noopener noreferrer">Instagram</a>
+      <a href="https://discord.gg/HaSH7sCG" target="_blank" class="discord" rel="noopener noreferrer">Discord</a>
+      <a href="https://www.youtube.com/@slordes" target="_blank" class="youtube" rel="noopener noreferrer">YouTube</a>
+      <a href="https://x.com/kullaniciadi" target="_blank" class="x" rel="noopener noreferrer">X</a>
+      <a href="https://www.tiktok.com/@slordesboy" target="_blank" class="tiktok" rel="noopener noreferrer">TikTok</a>
     </div>
   </div>
-
-  <script>
-    const video = document.getElementById('bgVideo');
-    window.addEventListener('click', () => {
-      video.muted = false;
-      video.play();
-    });
-  </script>
 
 </body>
 </html>
